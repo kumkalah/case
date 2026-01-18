@@ -185,10 +185,10 @@ local Themes = {
         ["Window Outline"] = FromHex('#532f14'),
         ["Accent"] = FromHex('#d86e31'),
         ["Background 1"] = FromHex('#2d1b0f'),
-        ["Text"] = FromHex('#323232'),
+        ["Text"] = FromHex('#ffffff'),
         ["Inline"] = FromHex('#432610'),
-        ["Element"] = FromHex('#2a2119'),
-        ["Inactive Text"] = FromHex('#323232'),
+        ["Element"] = FromHex('#553727'),
+        ["Inactive Text"] = FromHex('#ffffff'),
         ["Border"] =  FromHex('#6d441f'),
         ["Background 2"] = FromHex('#2d1b0f'),
     }
