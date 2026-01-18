@@ -2268,11 +2268,21 @@ do
                 AnchorPoint = Vector2New(0.5, 0),
                 Position = UDim2New(0.5, 0, 0, 25),
                 BorderColor3 = FromRGB(0, 0, 0),
-                Size = UDim2New(0, 180, 0, 30),
+                Size = UDim2New(0, 0, 0, 30), -- Начальный размер по ширине 0
                 BorderSizePixel = 2,
                 BackgroundColor3 = FromRGB(17, 21, 27),
                 ZIndex = 5,
+                AutomaticSize = Enum.AutomaticSize.XY -- Автоматический размер по содержимому
             })  Items["Watermark"]:AddToTheme({BackgroundColor3 = "Background 1"})
+            
+            Instances:Create("UIPadding", {
+                Parent = Items["Watermark"].Instance,
+                Name = "\0",
+                PaddingLeft = UDimNew(0, 12),
+                PaddingRight = UDimNew(0, 12),
+                PaddingTop = UDimNew(0, 8),
+                PaddingBottom = UDimNew(0, 8)
+            })
             
             Items["UIStroke"] = Instances:Create("UIStroke", {
                 Parent = Items["Watermark"].Instance,
@@ -2327,7 +2337,7 @@ do
                 Position = UDim2New(0.5, 0, 0.5, 0),
                 BorderSizePixel = 0,
                 ZIndex = 5,
-                AutomaticSize = Enum.AutomaticSize.X,
+                AutomaticSize = Enum.AutomaticSize.X, -- Автоматическая ширина по тексту
                 TextSize = 14,
                 BackgroundColor3 = FromRGB(255, 255, 255)
             })  Items["Text"]:AddToTheme({TextColor3 = "Text"})
@@ -2336,7 +2346,7 @@ do
         function Watermark:SetText(Text)
             Text = tostring(Text)
             Items["Text"].Instance.Text = Text
-            Items["Watermark"]:Tween(nil, {Size = UDim2New(0, Items["Text"].Instance.TextBounds.X + 20, 0, 30)})
+            -- Рамка автоматически подстроится из-за AutomaticSize
         end
 
         function Watermark:SetVisibility(Bool)
