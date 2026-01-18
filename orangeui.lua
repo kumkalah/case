@@ -182,15 +182,15 @@ local Keys = {
 
 local Themes = {
     ["Preset"] = {
-        ["Window Outline"] = FromRGB(0, 0, 0),
-        ["Accent"] = FromRGB(155, 11, 227),
-        ["Background 1"] = FromRGB(20,20,20),
-        ["Text"] = FromRGB(255, 255, 255),
-        ["Inline"] = FromHex('#161616'),
-        ["Element"] = FromHex('#1c1c1c'),
-        ["Inactive Text"] = FromRGB(185, 185, 185),
-        ["Border"] =  FromHex('#323232'),
-        ["Background 2"] = FromRGB(24,24,24)
+        ["Window Outline"] = FromHex('#532f14'),
+        ["Accent"] = FromHex('#d86e31'),
+        ["Background 1"] = FromHex('#2d1b0f'),
+        ["Text"] = FromHex('#323232'),
+        ["Inline"] = FromHex('#432610'),
+        ["Element"] = FromHex('#2a2119'),
+        ["Inactive Text"] = FromHex('#323232'),
+        ["Border"] =  FromHex('#6d441f'),
+        ["Background 2"] = FromHex('#2d1b0f'),
     }
 }
 
