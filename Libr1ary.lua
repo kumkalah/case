@@ -11,8 +11,6 @@ local debris = game:GetService("Debris")
 local tween_service = game:GetService("TweenService")
 local rs = game:GetService("ReplicatedStorage")
 
-Instance_manager = framework.modules.instance_manager
-signals = framework.modules.signals
 
 
 local vec2 = Vector2.new
