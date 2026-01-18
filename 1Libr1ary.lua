@@ -27,6 +27,14 @@ local hsv = Color3.fromHSV
 local rgbseq = ColorSequence.new
 local rgbkey = ColorSequenceKeypoint.new
 
+
+local TableInsert = table.insert
+local TableFind = table.find
+local TableRemove = table.remove
+local TableConcat = table.concat
+local TableClone = table.clone
+local TableUnpack = table.unpack
+
 local camera = ws.CurrentCamera
 local lp = players.LocalPlayer
 local mouse = lp:GetMouse()
